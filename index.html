@@ -5,8 +5,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Maths-Partner-Search</title>
-    <link rel="stylesheet" href="styles/style.css">
     <link rel="shortcut icon" href="./src/images/favicon.ico" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles/style.css">
 </head>
 
 <body>
@@ -22,20 +24,20 @@
     <main>
         <div class="main">
             <div class="hello">
+                <div class="mb-3">
+                    <label for="problem" class="form-label">Problem</label>
+                    <input type="text" class="form-control " id="problem" placeholder="Type Here...." minlength="2">
+                </div>
 
-                <label for="problem">Problem</label>
-
-                <input type="text" id="problem" class="inp" name="problem" placeholder="Type Here...." minlength="2">
-
-                <label for="select-category">Select Category</label>
-
-                <select name="category" id="category">
-                    <!-- <option>Select Category</option> -->
-                    <option value="simplify">Simplify</option>
-                    <option value="integration">Integration</option>
-                    <option value="derive">Derive</option>
-                </select>
-
+                <div class="mb-3">
+                    <label for="select-category">Select Category</label>
+                    <select class="form-select" id="category" name="category" aria-label="Select Category">
+                        <!-- <option>Select Category</option> -->
+                        <option value="simplify">Simplify</option>
+                        <option value="integration">Integration</option>
+                        <option value="derive">Derive</option>
+                    </select>
+                </div>
                 <button class="btn-search" onclick="fetchCall()"><svg xmlns="http://www.w3.org/2000/svg"
                         viewBox="0 0 24 24" width="24" height="24">
                         <path fill="none" d="M0 0h24v24H0z"></path>
