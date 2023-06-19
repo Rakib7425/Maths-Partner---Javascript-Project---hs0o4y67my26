@@ -16,7 +16,7 @@ const fetchCall = async () => {
 
     const problem = document.getElementById('problem').value;
     const category = document.getElementById('category').value;
-    const url = `https://newton.vercel.app/api/v2/${category}/${encodeURIComponent(problem)}`
+    const url = `https://newton.vercel.app/api/v2/${category}/${encodeURIComponentCustom(problem)}`
 
     const response = await fetch(url);
     const jsonData = await response.json();
@@ -38,4 +38,12 @@ const fetchCall = async () => {
     }
 
 }
+// replace of encodeURIComponent functionality in js engine
 
+function encodeURIComponentCustom(str) {
+    const reservedChars = /[!'()*]/g;
+
+    return str.replace(reservedChars, (match) => {
+        return '%' + match.charCodeAt(0).toString(16).toUpperCase();
+    });
+}
