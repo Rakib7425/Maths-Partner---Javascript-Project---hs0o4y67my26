@@ -55,8 +55,12 @@ option {
     width: 40%;
     color: black !important;
     border-radius: 10px;
-    margin: 40px auto;
+    margin: auto;
     text-align: center;
+}
+
+.answer {
+    margin-top: 8rem;
 }
 
 .finalAns {
