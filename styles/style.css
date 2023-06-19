@@ -123,7 +123,9 @@ option {
 .btn-search:hover span {
     transform: translateX(8px);
 }
-
+.no-data a{
+    font-size: 18px;
+}
 .delete-btn {
     background: #ff4742;
     border: 1px solid #ff4742;

@@ -47,7 +47,12 @@ if (data.length > 0) {
 
 else {
     let h1 = document.createElement("h1");
-    h1.innerHTML = `<h1> No Data Found </h1>`;
+    h1.innerHTML = `
+                    <div class="no-data">
+                        <h1> No Data Found </h1>
+                        <a href='../index.html'>Back to Home</a>
+                    </div>
+    `;
     document.getElementById('historyCardsContainer').appendChild(h1);
 }
 
