@@ -4,7 +4,7 @@
     box-sizing: border-box;
 }
 
-body {
+.index-body {
     background-color: rgb(50, 51, 55);
     color: white;
     max-width: 85vw;
@@ -52,6 +52,7 @@ label {
     font-weight: 600;
 }
 option {
+    
     background-color: rgb(50, 51, 55);
     color: rgb(255, 255, 255);
 }
