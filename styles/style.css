@@ -27,14 +27,16 @@
     color: #ffffff;
 }
 .header a :hover {
-    text-decoration: none !important;
     color: #b4b1b1;
 }
 .main {
     margin-top: 10vh;
     /* display: flex; */
 }
-
+.cBadge{
+    color: chartreuse;
+    margin: 0 5px;
+}
 .hello {
     display: flex;
     align-items: center;
@@ -142,7 +144,7 @@ option {
     line-height: 16px;
     min-height: 40px;
     outline: 0;
-    padding: 12px 14px;
+    padding: 12px 10px;
     margin-top: 15px;
     text-align: center;
     text-rendering: geometricprecision;
