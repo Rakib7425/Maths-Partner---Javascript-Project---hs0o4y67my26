@@ -7,7 +7,7 @@
 body {
     background-color: rgb(50, 51, 55);
     color: white;
-    text-align: center;
+
     max-width: 85vw;
     margin: 3rem auto;
 }
@@ -18,19 +18,30 @@ body {
 }
 
 .main {
-    margin-top: 11vh;
+    margin-top: 10vh;
     /* display: flex; */
 }
 
 .hello {
     display: flex;
-    justify-content: center;
     align-items: center;
-    /* height: 20vh; */
+    justify-content: center;
+    height: 30vh;
     flex-wrap: wrap;
     gap: 20px;
 }
-
+.hello button {
+    margin-top: 25px;
+}
+label {
+    display: inline;
+    font-size: 20px;
+    font-weight: 600;
+}
+option {
+    background-color: rgb(50, 51, 55);
+    color: rgb(255, 255, 255);
+}
 .ans {
     background-color: aquamarine;
     height: 10rem;
@@ -38,6 +49,7 @@ body {
     color: black !important;
     border-radius: 10px;
     margin: 40px auto;
+    text-align: center;
 }
 
 .finalAns {
