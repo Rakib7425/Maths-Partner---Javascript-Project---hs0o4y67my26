@@ -22,9 +22,13 @@ body {
     align-items: center;
     justify-content: space-between;
 }
-a{
+.header a {
     text-decoration: none !important;
     color: #ffffff;
+}
+.header a :hover {
+    text-decoration: none !important;
+    color: #b4b1b1;
 }
 .main {
     margin-top: 10vh;
@@ -80,7 +84,7 @@ option {
     margin: 0px 10px;
 }
 /* button { */
-    /* font-size: 15px;
+/* font-size: 15px;
     font: bold;
     padding: 6px;
     border-radius: 10px;
