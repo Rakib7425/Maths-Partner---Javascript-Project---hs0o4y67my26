@@ -1,5 +1,4 @@
-/*  If there is no data stored in the local storage, `data` is
-initialized as an empty array. */
+
 let data = [];
 
 if (localStorage.getItem("problems")) {
@@ -11,11 +10,9 @@ creates a card for each item in the array and displays it on the DOM.
 */
 
 if (data.length > 0) {
-    //  Create Cards and Show to the Dom
-    /*  array and displaying it on the
-    DOM.
-    Finally, it appends the newly created card to the `historyCardsContainer` element
-    on the DOM. */
+
+    /* Create Cards and Show to the Dom */
+
     for (let i = 0; i < data.length; i++) {
         let card = document.createElement("div");
         card.classList.add("problem-card");
