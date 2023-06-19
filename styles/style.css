@@ -33,7 +33,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 25vh;
+    height: 24vh;
     flex-wrap: wrap;
     gap: 20px;
 }
