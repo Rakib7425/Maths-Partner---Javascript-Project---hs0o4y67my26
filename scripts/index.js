@@ -8,15 +8,19 @@ if (localStorage.getItem("problems")) {
     data = JSON.parse(localStorage.getItem("problems"));
 }
 
-
+let badge_length = data.length;
 
 /*  Problem input should not be empty */
 document.getElementById("problemBtn").addEventListener("click", () => {
+
     if (document.getElementById("problem").value.length > 0) {
         fetchCall();
-    }
-});
+        ++badge_length;
 
+    }
+    // Show the saved number of data as badge notification  alert
+    document.getElementById('saved-badge').innerText = `${badge_length}`;
+});
 
 /**
  *  API call based on user input, stores it in local storage, and displays
@@ -47,6 +51,10 @@ const fetchCall = async () => {
     }
 
 }
+
+// Show the saved number of data as badge notification  alert
+document.getElementById('saved-badge').innerText = `${badge_length}`;
+
 
 // replace of encodeURIComponent functionality in js engine
 
