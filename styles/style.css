@@ -11,6 +11,13 @@ body {
     max-width: 85vw;
     margin: 3rem auto;
 }
+.saved-body {
+    background-color: rgb(50, 51, 55);
+    color: white;
+    text-align: center;
+    max-width: 85vw;
+    margin: 3rem auto;
+}
 .header {
     display: flex;
     align-items: center;

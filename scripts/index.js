@@ -2,17 +2,14 @@ const answer = document.getElementById('answer');
 
 let data = [];
 
-/* This code is checking if there is any data stored in the browser's local storage under the key
-"problems". If there is data, it is retrieving that data and parsing it from a JSON string to a
-JavaScript object, and assigning it to the `data` variable. If there is no data, `data` remains an
-empty array. */
+
 if (localStorage.getItem("problems")) {
     data = JSON.parse(localStorage.getItem("problems"));
 }
 
 
 /**
- * The function fetches data from an API based on user input, stores it in local storage, and displays
+ *  API call based on user input, stores it in local storage, and displays
  * the result on the webpage.
  */
 const fetchCall = async () => {
