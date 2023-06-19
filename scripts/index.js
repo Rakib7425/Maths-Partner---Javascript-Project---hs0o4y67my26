@@ -3,9 +3,19 @@ const answer = document.getElementById('answer');
 let data = [];
 
 
+/* checking local storage under the key "problems". */
 if (localStorage.getItem("problems")) {
     data = JSON.parse(localStorage.getItem("problems"));
 }
+
+
+
+/*  Problem input should not be empty */
+document.getElementById("problemBtn").addEventListener("click", () => {
+    if (document.getElementById("problem").value.length > 0) {
+        fetchCall();
+    }
+});
 
 
 /**
@@ -13,7 +23,6 @@ if (localStorage.getItem("problems")) {
  * the result on the webpage.
  */
 const fetchCall = async () => {
-
     const problem = document.getElementById('problem').value;
     const category = document.getElementById('category').value;
     const url = `https://newton.vercel.app/api/v2/${category}/${encodeURIComponent(problem)}`
@@ -38,6 +47,7 @@ const fetchCall = async () => {
     }
 
 }
+
 // replace of encodeURIComponent functionality in js engine
 
 // function myURIfn(str) {
