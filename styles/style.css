@@ -125,6 +125,7 @@ option {
 }
 .no-data a{
     font-size: 18px;
+    color: chartreuse;
 }
 .delete-btn {
     background: #ff4742;
