@@ -100,7 +100,7 @@ button {
 }
 
 .btn-search svg {
-    margin-right: 4px;
+    margin-right: 2px;
     transform: rotate(30deg);
     transition: transform 0.5s cubic-bezier(0.76, 0, 0.24, 1);
 }
@@ -114,7 +114,7 @@ button {
 }
 
 .btn-search:hover span {
-    transform: translateX(10px);
+    transform: translateX(8px);
 }
 
 .delete-btn {
