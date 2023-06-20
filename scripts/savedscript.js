@@ -52,7 +52,7 @@ else {
                         <h1> No Data Found </h1>
                         <a href='/'>Back to Home</a>
                     </div>
-    `;
+                    `;
     document.getElementById('historyCardsContainer').appendChild(h1);
 }
 
