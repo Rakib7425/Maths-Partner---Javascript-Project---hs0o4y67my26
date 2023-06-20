@@ -29,7 +29,7 @@ document.getElementById("problemBtn").addEventListener("click", () => {
 const fetchCall = async () => {
     const problem = document.getElementById('problem').value;
     const category = document.getElementById('category').value;
-    const url = `https://newton.vercel.app/api/v2/${category}/${encodeURIComponent(problem)}`
+    const url = `https://newton.vercel.app/api/v2/${category}/${encodeURL(problem)}`
 
     const response = await fetch(url);
     const jsonData = await response.json();
@@ -56,12 +56,18 @@ const fetchCall = async () => {
 document.getElementById('saved-badge').innerText = `${badge_length}`;
 
 
-// replace of encodeURIComponent functionality in js engine
+/*
+ *replace of encodeURIComponent functionality of js engine
+ * The function encodes a given string into a URL-encoded format.
+ */
+function encodeURL(string) {
+    let encodedString = '';
 
-// function myURIfn(str) {
-//     const reservedChars = /[!'()*]/g;
+    for (let i = 0; i < string.length; i++) {
+        let char = string.charAt(i);
+        let asciiValue = char.charCodeAt(0);
+        encodedString += '%' + asciiValue.toString(16).toUpperCase();
+    }
+    return encodedString;
+}
 
-//     return str.replace(reservedChars, (match) => {
-//         return '%' + match.charCodeAt(0).toString(16).toUpperCase();
-//     });
-// }
