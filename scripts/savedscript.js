@@ -56,4 +56,4 @@ else {
     document.getElementById('historyCardsContainer').appendChild(h1);
 }
 
-{/* <a href='../index.html'>Back to Home</a> */}
+/* <a href='../index.html'>Back to Home</a> */
