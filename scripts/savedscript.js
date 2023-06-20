@@ -50,9 +50,10 @@ else {
     h1.innerHTML = `
                     <div class="no-data">
                         <h1> No Data Found </h1>
-                        <a href='../index.html'>Back to Home</a>
+                        <a href='/'>Back to Home</a>
                     </div>
     `;
     document.getElementById('historyCardsContainer').appendChild(h1);
 }
 
+{/* <a href='../index.html'>Back to Home</a> */}
