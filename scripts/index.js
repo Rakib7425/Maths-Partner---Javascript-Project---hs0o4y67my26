@@ -29,7 +29,7 @@ document.getElementById("problemBtn").addEventListener("click", () => {
 const fetchCall = async () => {
     const problem = document.getElementById('problem').value;
     const category = document.getElementById('category').value;
-    const url = `https://newton.vercel.app/api/v2/${category}/${encodeURL(problem)}`
+    const url = `https://newton.vercel.app/api/v2/${category}/${encodeURIComponent(problem)}`
 
     const response = await fetch(url);
     const jsonData = await response.json();
