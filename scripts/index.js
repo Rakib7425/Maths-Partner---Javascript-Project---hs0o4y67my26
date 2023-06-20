@@ -70,4 +70,3 @@ function encodeURL(string) {
     }
     return encodedString;
 }
-
